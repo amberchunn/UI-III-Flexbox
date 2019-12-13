@@ -229,13 +229,14 @@ div.content-container {
 	cursor: pointer;
 }
 .services-page {
-	font-size: 1.05em;
+	color: #444;
 }
 .services-intro {
 	padding: 10px 0 40px 0;
 	margin-bottom: 40px;
 	border-bottom: 1px solid #333;
 	width: 100%;
+	line-height: 1.25em;
 }
 .services-intro h1 {
 	font-size: 1.75em;
@@ -250,6 +251,7 @@ div.content-container {
 .facts-content p {
 	text-align: left;
 	margin-right: 15%;
+	line-height: 1.25em;
 }
 .facts-list {
 	margin-top: 20px;
@@ -258,6 +260,7 @@ div.content-container {
 	display: list-item;
 	list-style-type: square;
 	list-style-position: inside;
+	margin-bottom: 15px;
 }
 /* Box */
 .box h2,
@@ -269,7 +272,33 @@ div.content-container {
 	font-size: 1.05em;
 	padding-right: 2%;
 }
-
+main#services {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+section.service {
+	width: 48%;
+	background: #eee;
+	border: 1px solid #333;
+	padding: 20px;
+	line-height: 1.25em;
+	margin-bottom: 40px;
+	font-size: 1em;
+}
+.service button {
+	padding: 10px 40px;
+	text-align: center;
+	font-size: 0.75em;
+	border: 1px solid #333;
+	border-radius: 5px;
+	margin-top: 10px;
+}
+.service button:hover {
+	background: #dd8822;
+	color: #eee;
+	cursor: pointer;
+}
 /* Contact & Footer Styles */
 #contact {
 	padding-top: 35px;
@@ -285,4 +314,5 @@ div.content-container {
 #footer {
 	text-align: center;
 	margin: 50px auto;
+	width: 100%;
 }
